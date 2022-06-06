@@ -23,6 +23,10 @@ thread_local! {
         "ArrowRight" => Some(Direction::Right),
         "ArrowDown" => Some(Direction::Down),
         "ArrowLeft" => Some(Direction::Left),
+        "w" => Some(Direction::Up),
+        "d" => Some(Direction::Right),
+        "s" => Some(Direction::Down),
+        "a" => Some(Direction::Left),
         _ => None,
       };
 
