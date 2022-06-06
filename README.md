@@ -2,6 +2,8 @@
 
 A Snake Game built with Rust and WebAssembly
 
+![game](img.png "A Screengrab of the game")
+
 ## Building
 
 Make sure you have [Rust](https://www.rust-lang.org) and [wasm-pack](https://rustwasm.github.io/wasm-pack/) installed. 
