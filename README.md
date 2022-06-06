@@ -2,7 +2,7 @@
 
 A Snake Game built with Rust and WebAssembly
 
-![game](img.png "A Screengrab of the game")
+![Game](video.gif)
 
 ## Building
 
