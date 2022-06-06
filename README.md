@@ -2,7 +2,9 @@
 
 A Snake Game built with Rust and WebAssembly
 
-![Game](video.gif)
+<p align="center">
+  <img src="https://github.com/omerwyo/snakegame/blob/main/video.gif?raw=true" alt="Gameplay"/>
+</p>
 
 ## Building
 
