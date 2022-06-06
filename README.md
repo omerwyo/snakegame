@@ -8,7 +8,7 @@ A Snake Game built with Rust and WebAssembly
 
 ## Building
 
-Make sure you have [Rust](https://www.rust-lang.org) and [wasm-pack](https://rustwasm.github.io/wasm-pack/) installed. 
+Make sure you have [Rust](https://www.rust-lang.org/tools/install) and [wasm-pack](https://rustwasm.github.io/wasm-pack/) installed. 
 
 To install `wasm-pack` on *nix systems:
 
