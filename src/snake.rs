@@ -15,7 +15,7 @@ pub enum Direction {
 pub struct SnakeGame {
   pub width: usize,
   pub height: usize,
-  pub snake: VecDeque<Position>, // Head is the first item, tail is the last item
+  pub snake: VecDeque<Position>, // head is first, tail is the last
   pub direction: Direction,
   next_direction: Direction,
   pub food: Position,
@@ -65,8 +65,6 @@ impl SnakeGame {
     self.direction = self.next_direction;
 
     let (x, y) = self.snake[0];
-    // WARNING: There's no explicit underflow handling here
-    // (will panic in debug build)
     let new_head = match self.direction {
       Direction::Up => (x, y - 1),
       Direction::Right => (x + 1, y),
