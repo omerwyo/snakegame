@@ -12,7 +12,7 @@ Make sure you have [Rust](https://www.rust-lang.org) and [wasm-pack](https://rus
 
 To install `wasm-pack` on *nix systems:
 
-```bash
+```
 $ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
