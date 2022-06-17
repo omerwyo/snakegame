@@ -6,6 +6,7 @@ use snake::{Direction, SnakeGame};
 use std::{cell::RefCell, rc::Rc};
 use wasm_bindgen::{prelude::*, JsCast, UnwrapThrowExt};
 use web_sys::{window, HtmlDivElement, HtmlElement, KeyboardEvent};
+use rand::seq::SliceRandom;
 
 thread_local! {
   static GAME: Rc<RefCell<SnakeGame>> =
@@ -101,7 +102,8 @@ pub fn render() {
 
         field_element.set_inner_text({
           if pos == game.food {
-            "🍎"
+            let emojis = vec!["🍎", "🍒", "🥭", "🍉"];
+            emojis.choose(&mut rand::thread_rng())
           } else if game.snake.get(0) == Some(&pos) {
             "❇️"
           } else if game.snake.contains(&pos) {
